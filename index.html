@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chrome Dino Game</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="game-container">
+    <div class="header">
+      <div class="sound-toggle" id="soundToggle" title="Toggle Sound">🔊</div>
+      <div class="score-board">
+        <span class="hi-score" id="hiScoreText">HI 00000</span>
+        <span class="current-score" id="scoreText">00000</span>
+      </div>
+    </div>
+
+    <canvas id="gameCanvas" width="800" height="250"></canvas>
+
+    <div class="instructions">
+      <p>Press <kbd>Space</kbd> or <kbd>↑</kbd> to Jump | <kbd>↓</kbd> to Duck | Tap / Click on Mobile</p>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
+
